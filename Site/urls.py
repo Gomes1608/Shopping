@@ -3,6 +3,9 @@ from Site import views
 
 urlpatterns = [
     path("", views.index, name="index"),
-    path("produtos", views.produto_lista, name="peoduto lista"),
-    path("produto", views.produto_detalhe, name="produto_detalhe")
+    path('sobre-a-empresa' , views.institucional, name= 'institucional'),
+    path("Cadastro", views.Cadastro, name="Cadastro"),
+    path("Contato", views.Contato, name="Contato"),
+    path("produtos", views.produto_lista, name="produto lista"),
+    path("produto", views.produto_detalhe, name="produto_detalhe"),
 ]
