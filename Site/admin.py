@@ -10,7 +10,7 @@ class DepartamentoAdmin(admin.ModelAdmin):
 class ProdutoAdmin(admin.ModelAdmin):
     list_display = ['id', 'nome', 'preco', 'avaliacao', 'destaque', 'lancamento', 'departamento', 'ver_imagem']
     list_display_links = ['id', 'nome']
-    list_filter = ['departamento']
+    list_filter = ['departamento', 'avaliacao']
     readonly_fields = ['ver_imagem']
 
     def ver_imagem(self, obj):
